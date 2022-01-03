@@ -1,5 +1,5 @@
 const { GraphQLObjectType, GraphQLSchema, GraphQLInt, GraphQLString, GraphQLList } =require('graphql');
-
+const { gql } = require('apollo-server-express');
 
 
 const UserType = new GraphQLObjectType({
@@ -13,5 +13,8 @@ const UserType = new GraphQLObjectType({
         ip_address: { type: GraphQLString }, 
     })
 })
+
+
+
 
 module.exports = UserType;

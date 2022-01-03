@@ -2,6 +2,7 @@ const graphql = require('graphql');
 const { GraphQLObjectType, GraphQLSchema, GraphQLInt, GraphQLString, GraphQLList } = graphql;
 const UserType = require('./TypeDefs/UserType');
 const userData = require('../mockdata.json');
+// const { ApolloServer } = require('apollo-server-express');
 
 
 const RootQuery = new GraphQLObjectType({
